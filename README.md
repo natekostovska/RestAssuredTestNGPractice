@@ -6,10 +6,11 @@
 
 1. Java
 2. Maven
-3. TestNG
-4. Allure reporting
-5. IntelliJ
-6. Java Faker
-7. Lombok plug in and dependencies
-8. Jackson Annotations
-9. Etc...
+3. Rest Assured
+4. TestNG
+5. Allure reporting
+6. IntelliJ
+7. Java Faker
+8. Lombok plug in and dependencies
+9. Jackson Annotations
+10. Etc...
