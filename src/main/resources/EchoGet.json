@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "default": {},
+  "title": "Root Schema",
+  "required": [
+    "args",
+    "headers",
+    "url"
+  ],
+  "properties": {
+    "args": {
+      "type": "object",
+      "default": {},
+      "title": "The args Schema",
+      "properties": {}
+    },
+    "headers": {
+      "type": "object",
+      "default": {},
+      "title": "The headers Schema",
+      "required": [
+        "host",
+        "x-forwarded-proto",
+        "x-request-start",
+        "connection",
+        "x-forwarded-port",
+        "x-amzn-trace-id",
+        "accept",
+        "user-agent",
+        "accept-encoding"
+      ],
+      "properties": {
+        "host": {
+          "type": "string",
+          "default": "",
+          "title": "The host Schema"
+        },
+        "x-forwarded-proto": {
+          "type": "string",
+          "default": "",
+          "title": "The x-forwarded-proto Schema"
+        },
+        "x-request-start": {
+          "type": "string",
+          "default": "",
+          "title": "The x-request-start Schema"
+        },
+        "connection": {
+          "type": "string",
+          "default": "",
+          "title": "The connection Schema"
+        },
+        "x-forwarded-port": {
+          "type": "string",
+          "default": "",
+          "title": "The x-forwarded-port Schema"
+        },
+        "x-amzn-trace-id": {
+          "type": "string",
+          "default": "",
+          "title": "The x-amzn-trace-id Schema"
+        },
+        "accept": {
+          "type": "string",
+          "default": "",
+          "title": "The accept Schema"
+        },
+        "user-agent": {
+          "type": "string",
+          "default": "",
+          "title": "The user-agent Schema"
+        },
+        "accept-encoding": {
+          "type": "string",
+          "default": "",
+          "title": "The accept-encoding Schema"
+        }
+      },
+      "examples": [{
+        "host": "postman-echo.com",
+        "x-forwarded-proto": "http",
+        "x-request-start": "t=1723500895.254",
+        "connection": "close",
+        "x-forwarded-port": "443",
+        "x-amzn-trace-id": "Root=1-66ba895f-5f5ec6520db54ed954d683b5",
+        "accept": "*/*",
+        "user-agent": "Apache-HttpClient/4.5.13 (Java/20.0.1)",
+        "accept-encoding": "gzip,deflate"
+      }]
+    },
+    "url": {
+      "type": "string",
+      "default": "",
+      "title": "The url Schema"
+    }
+  },
+  "examples": [{
+    "headers": {
+      "host": "postman-echo.com",
+      "x-forwarded-proto": "http",
+      "x-request-start": "t=1723500895.254",
+      "connection": "close",
+      "x-forwarded-port": "443",
+      "x-amzn-trace-id": "Root=1-66ba895f-5f5ec6520db54ed954d683b5",
+      "accept": "*/*",
+      "user-agent": "Apache-HttpClient/4.5.13 (Java/20.0.1)",
+      "accept-encoding": "gzip,deflate"
+    },
+    "url": "http://postman-echo.com/get"
+  }]
+}
