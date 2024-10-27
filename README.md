@@ -13,4 +13,5 @@
 7. Java Faker
 8. Lombok plug in and dependencies
 9. Jackson Annotations
-10. Etc...
+10. IntelliJ Idea
+11. Etc...
