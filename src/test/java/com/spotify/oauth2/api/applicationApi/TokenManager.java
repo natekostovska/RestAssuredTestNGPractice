@@ -33,7 +33,7 @@ public class TokenManager {
     }
 
     private static Response renewToken() {
-        HashMap<String, String> formParams = new HashMap<String, String>();
+        HashMap<String, String> formParams = new HashMap<>();
         formParams.put("client_id", ConfigLoader.getInstance().getClientId());
         formParams.put("client_secret", ConfigLoader.getInstance().getClientSecret());
         formParams.put("refresh_token", ConfigLoader.getInstance().getRefreshToken());
